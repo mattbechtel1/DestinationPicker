@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  city: MyString
+  language_1: one
+  language_2: one
+  flag_1: one
+  flag_2: one
+  breakdown: MyText
+  region: one
+  population: 1
+
+two:
+  name: MyString
+  city: MyString
+  language_1: two
+  language_2: two
+  flag_1: two
+  flag_2: two
+  breakdown: MyText
+  region: two
+  population: 1
