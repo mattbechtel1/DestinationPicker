@@ -42,6 +42,9 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
+# Allows data to be copied from CSVs into Postgres
+gem 'activerecord-copy'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 

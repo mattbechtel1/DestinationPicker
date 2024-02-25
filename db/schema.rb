@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_02_13_063156) do
+ActiveRecord::Schema[7.0].define(version: 2024_02_25_012851) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -19,8 +19,8 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_13_063156) do
     t.string "city"
     t.bigint "language_primary_id", null: false
     t.bigint "language_secondary_id"
-    t.bigint "flag_primary_id", null: false
-    t.bigint "flag_secondary_id"
+    t.string "flag_primary_id", null: false
+    t.string "flag_secondary_id"
     t.text "breakdown"
     t.bigint "region_id", null: false
     t.integer "population"
@@ -33,8 +33,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_13_063156) do
     t.index ["region_id"], name: "index_destinations_on_region_id"
   end
 
-  create_table "flags", primary_key: "code", force: :cascade do |t|
-    t.text "emoji"
+  create_table "flags", primary_key: "code", id: { type: :string, limit: 2 }, force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
