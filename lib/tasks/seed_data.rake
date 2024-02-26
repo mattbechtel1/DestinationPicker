@@ -1,9 +1,12 @@
 require 'open-uri'
 require 'csv'
-require 'pry'
+require 'set'
 
 COUNTRY_CODE_DIRECTORY = "public/country_codes.csv"
 COUNTRY_CODE_URL = "https://datahub.io/core/country-list/r/data.csv"
+
+DEV_LIST_DIRECTORY = "public/lists/sample_upload.csv"
+
 
 namespace :seed_flags do
     desc "This task downloads country code data"
@@ -31,5 +34,45 @@ namespace :seed_flags do
 
     task :cleanup do
         File.delete(COUNTRY_CODE_DIRECTORY) if File.exist?(COUNTRY_CODE_DIRECTORY)
+    end
+end
+
+
+namespace :seed_destinations do
+    desc "This task uploads destination possible attributes"
+    task :seed_dependencies => :environment do
+        Destination.delete_all
+        Region.delete_all
+        Language.delete_all
+        regions_in_memory = Set[]
+        languages_in_memory = Set[]
+        CSV.foreach(DEV_LIST_DIRECTORY, headers: true) do |row|
+            languages_in_memory.add(row["Language"])
+            if row["Language"].present?
+                languages_in_memory.add(row["Language"])
+            end
+            regions_in_memory.add(row["Macroregion"])
+        end
+        regions_in_memory.each do |region|
+            Region.find_or_create_by(name: region)
+        end
+        languages_in_memory.each do |language|
+            Language.find_or_create_by(name: language)
+        end
+    end
+
+    task :generate_destinations => :environment do 
+        Destination.delete_all
+        CSV.foreach(DEV_LIST_DIRECTORY, headers: true) do |row|
+            Destination.create!(
+                name: row["Region"],
+                city: row["Major City"],
+                language_primary: Language.find_by(name: row["Language"]),
+                language_secondary: Language.find_by(name: row["Language2"]),
+                flag_primary: Flag.find_by(code: row["Country Code"]),
+                flag_secondary: Flag.find_by(code: row["Secondary Code"]),
+                region: Region.find_by(name: row["Macroregion"])
+            )
+        end
     end
 end
