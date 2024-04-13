@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   get "/destinations", to: "destinations#index"
+  get "/select", to: "destinations#show"
 end

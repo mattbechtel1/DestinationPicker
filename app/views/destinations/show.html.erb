@@ -1,0 +1,14 @@
+<h1>
+    <div class="flag">
+        <%= @destination.flags[0].get_flag_emoji %> <%= @destination.name %> <%= @destination.flags[0].get_flag_emoji %>
+    </div> 
+</h1>
+<h2>
+    <div class="language">
+        <% if @destination.language_secondary %>
+            Languages: <%= @destination.language_primary.name %> & <%= @destination.language_secondary.name %>
+        <% else %>
+            Language: <%= @destination.language_primary.name %>
+        <% end %>
+    </div>
+</h2>

@@ -1,2 +1,26 @@
-<h1>All Destinations</h1>
-<p>Find me in app/views/destinations/index.html.erb</p>
+<h1>Destinations List</h1>
+
+    <table>
+        <tbody>
+            <thead>
+                <tr>
+                    <td><u>Destination Details</u></td>
+                <tr>
+            </thead>
+        <% @destinations.each do |destination| %>
+            <tr>        
+                <td><h2><%= destination.name %></h2></td>
+            </tr>
+            <tr>
+                <td>Main City: <%= destination.city %></td>
+            </tr>
+                <td>
+                    <%= destination.language_primary.name %>
+                    <% if destination.language_secondary %>
+                        & <%= destination.language_secondary.name %>
+                    <% end %>
+                </td>
+            <tr>
+        <% end %>
+        </tbody>
+    </table>

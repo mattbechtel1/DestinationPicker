@@ -23,4 +23,8 @@ class Destination < ApplicationRecord
     end
   end
 
+  def self.select_random
+    self.find(self.pluck(:id).sample)
+  end
+
 end
