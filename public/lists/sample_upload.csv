@@ -2,7 +2,7 @@ Region,Pop.,Divisions,Major City,Language,Language2,Country Code,Secondary Code,
 Bajio,"18,474,000","Queretaro, Guanajuato, Jalisco, Aguascalientes",Guadalajara,Spanish,,MX,,North America
 Canadian West,"11,856,332","Manitoba, Saskatchewan, Alberta, British Columbia, Yukon, Northwest Territories, Nunavut",Vancouver,English,,CA,,North America
 Carolinas,"15,557,813","North Carolina, South Carolina",Charlotte,English,,US,,North America
-Chesapeake Bay,"16,488,110","Delaware, Maryland, District of Columbia, Virginia",Washington,English,,US,,North America
+Chesapeake Bay,"16,488,110","Delaware, Maryland, District of Columbia, Virginia","Washington, D.C.",English,,US,,North America
 Chiapas & the Yucatan,"13,712,471","Belize, Quintana Roo, Yucatan, Campeche, Tabasco, Chiapas",Merida,Spanish,,MX,BZ,North America
 Corn Belt,"19,090,686","South Dakota, Iowa, Nebraska, Missouri, Kansas, Oklahoma",Kansas City,English,,US,,North America
 Deep South,"18,373,697","Tennessee, Alabama, Mississippi, Louisiana, Arkansas",Nashville,English,,US,,North America
@@ -20,7 +20,7 @@ Ontario,"14,223,942",,Toronto,English,,CA,,North America
 Pacific Coast of Mexico,"13,218,000","Coilma, Michoacan, Guerrero, Oaxaca",Morelia/Acapulco,Spanish,,MX,,North America
 Pacific Northwest,"12,675,928","Oregon, Washington, Alaska",Seattle,English,,US,,North America
 Pennsylvania & New Jersey,"22,291,694","Pennsylvania, New Jersey",Philadelphia,English,,US,,North America
-Quebec & Atlantic Canada,"10,911,707","Quebec, Newfoundland and Labrador, Nova Scotia, Prince Edward Island, New Brunswick",Quebec,French,English,CA,,North America
+Quebec & Atlantic Canada,"10,911,707","Quebec, Newfoundland and Labrador, Nova Scotia, Prince Edward Island, New Brunswick",Montreal,French,English,CA,,North America
 Rocky Mountains,"12,663,034","New Mexico, Colorado, Utah, Wyoming, Montana, Idaho",Denver,English,,US,,North America
 Sierra Madre Oriental,"12,167,000","Nuevo Leon, Tamauiplas, San Luis Potosi",Monterrey,Spanish,,MX,,North America
 Southern California,"18,623,093","Kern, Los Angeles, Orange, San Diego, San Luis Obispo, Santa Barbara, Ventura",Los Angeles,English,,US,,North America
