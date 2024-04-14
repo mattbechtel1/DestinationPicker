@@ -12,3 +12,15 @@
         <% end %>
     </div>
 </h2>
+<h2>
+    <div class="cities">
+        <div class="city-header">Primary Cities</div>
+        <div>
+            <ul class="city-list">
+                <% @destination.cities.each do |city| %>
+                    <li><a href=<%= 'https://en.wikivoyage.org/wiki/' + city.tr(" ", "_") %>><%= city %></a></li>
+                <% end %>
+            </ul>
+        </div>
+    </div>
+</h2>

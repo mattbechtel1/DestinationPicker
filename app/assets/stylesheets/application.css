@@ -16,3 +16,6 @@
 
 h1 { color: green; text-align: center }
 .language { text-align: center;}
+.cities { text-align: center;}
+.city-header { text-decoration: underline;}
+.city-list { list-style: none; padding: 0}

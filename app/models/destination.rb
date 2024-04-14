@@ -27,4 +27,8 @@ class Destination < ApplicationRecord
     self.find(self.pluck(:id).sample)
   end
 
+  def cities
+    self.city.split('/')
+  end
+
 end
