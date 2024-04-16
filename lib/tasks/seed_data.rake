@@ -3,7 +3,7 @@ require 'csv'
 require 'set'
 
 COUNTRY_CODE_DIRECTORY = "public/country_codes.csv"
-COUNTRY_CODE_URL = "https://datahub.io/core/country-list/r/data.csv"
+COUNTRY_CODE_URL = "https://r2.datahub.io/clt98ab600006l708tkbrtzel/master/raw/data.csv"
 
 DEV_LIST_DIRECTORY = "public/lists/sample_upload.csv"
 
