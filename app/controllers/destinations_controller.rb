@@ -7,7 +7,7 @@ class DestinationsController < ApplicationController
 
   def random
     @destination = Destination.select_random
-    redirect_to destinaton_path(@destination)
+    redirect_to destination_path(@destination)
   end
 
   private
