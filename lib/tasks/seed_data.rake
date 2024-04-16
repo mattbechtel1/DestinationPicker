@@ -71,7 +71,8 @@ namespace :seed_destinations do
                 language_secondary: Language.find_by(name: row["Language2"]),
                 flag_primary: Flag.find_by(code: row["Country Code"]),
                 flag_secondary: Flag.find_by(code: row["Secondary Code"]),
-                region: Region.find_by(name: row["Macroregion"])
+                region: Region.find_by(name: row["Macroregion"]),
+                divisions: row["Divisions"]
             )
         end
     end

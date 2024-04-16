@@ -1,9 +1,13 @@
-<h1>
+<h1><div class="region">
+    <%= @destination.region.name %>
+</div></h1>
+
+<h2>
     <div class="flag">
         <%= @destination.flags[0].get_flag_emoji %> <%= @destination.name %> <%= @destination.flags[0].get_flag_emoji %>
     </div> 
-</h1>
-<h2>
+</h2>
+<h3>
     <div class="language">
         <% if @destination.language_secondary %>
             Languages: <%= @destination.language_primary.name %> & <%= @destination.language_secondary.name %>
@@ -11,8 +15,8 @@
             Language: <%= @destination.language_primary.name %>
         <% end %>
     </div>
-</h2>
-<h2>
+</h3>
+<h4>
     <div class="cities">
         <div class="city-header">Primary Cities</div>
         <div>
@@ -23,4 +27,8 @@
             </ul>
         </div>
     </div>
-</h2>
+</h4>
+
+<% if @destination.divisions %>
+    <div class="jurisdictions">Sub-jurisdictions: <%= @destination.divisions %></div>
+<% end %>

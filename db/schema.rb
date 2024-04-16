@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_02_25_012851) do
+ActiveRecord::Schema[7.0].define(version: 2024_04_14_052710) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -26,6 +26,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_25_012851) do
     t.integer "population"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "divisions"
     t.index ["flag_primary_id"], name: "index_destinations_on_flag_primary_id"
     t.index ["flag_secondary_id"], name: "index_destinations_on_flag_secondary_id"
     t.index ["language_primary_id"], name: "index_destinations_on_language_primary_id"

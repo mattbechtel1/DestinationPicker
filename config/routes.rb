@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   get "/destinations", to: "destinations#index"
-  get "/select", to: "destinations#show"
+  get "/select", to: "destinations#random"
+  get "/destinations/:id", to: "destinations#show", as: "destination"
 end

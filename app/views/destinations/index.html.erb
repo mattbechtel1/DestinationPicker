@@ -3,21 +3,27 @@
     <table>
         <tbody>
             <thead>
-                <tr>
-                    <td><u>Destination Details</u></td>
+                <tr class="header-row">
+                    <td>Destination</td>
+                    <td>Cities</td>
+                    <td>Language</td>
                 <tr>
             </thead>
         <% @destinations.each do |destination| %>
-            <tr>        
-                <td><h2><%= destination.name %></h2></td>
-            </tr>
-            <tr>
-                <td>Main City: <%= destination.city %></td>
-            </tr>
+            <tr class="item-row">        
                 <td>
-                    <%= destination.language_primary.name %>
+                    <h2>
+                        <%= destination.flags[0].get_flag_emoji %> <%= link_to destination.name, destination_path(destination) %> <%= destination.flags[1].get_flag_emoji %>
+                    </h2>
+                </td>
+                <td>
+                    <% destination.cities.each do |city| %>
+                        <div><a href=<%= 'https://en.wikivoyage.org/wiki/' + city.tr(" ", "_") %>><%= city %></div>
+                    <% end %>
+                </td>
+                <td><%= destination.language_primary.name %>
                     <% if destination.language_secondary %>
-                        & <%= destination.language_secondary.name %>
+                        / <%= destination.language_secondary.name %>
                     <% end %>
                 </td>
             <tr>

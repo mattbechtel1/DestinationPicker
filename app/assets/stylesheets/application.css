@@ -15,7 +15,11 @@
  */
 
 h1 { color: green; text-align: center }
+h2 { text-align: center;}
 .language { text-align: center;}
 .cities { text-align: center;}
-.city-header { text-decoration: underline;}
-.city-list { list-style: none; padding: 0}
+.city-header { text-decoration: underline; font-size: large;}
+.city-list { list-style: none; padding: 0; margin-top: auto;}
+.jurisdictions {text-align: center;}
+.header-row {text-align: center; text-decoration: underline;}
+.item-row {text-align: center;}
