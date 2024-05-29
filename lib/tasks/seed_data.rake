@@ -6,6 +6,7 @@ COUNTRY_CODE_DIRECTORY = "public/country_codes.csv"
 COUNTRY_CODE_URL = "https://r2.datahub.io/clt98ab600006l708tkbrtzel/master/raw/data.csv"
 
 DEV_LIST_DIRECTORY = "public/lists/sample_upload.csv"
+PROD_LIST_DIRECTORY = "public/lists/destinations_list.csv"
 
 
 namespace :seed_flags do
@@ -46,7 +47,7 @@ namespace :seed_destinations do
         Language.delete_all
         regions_in_memory = Set[]
         languages_in_memory = Set[]
-        CSV.foreach(DEV_LIST_DIRECTORY, headers: true) do |row|
+        CSV.foreach(PROD_LIST_DIRECTORY, headers: true) do |row|
             languages_in_memory.add(row["Language"])
             if row["Language"].present?
                 languages_in_memory.add(row["Language"])
@@ -61,9 +62,21 @@ namespace :seed_destinations do
         end
     end
 
-    task :generate_destinations => :environment do 
+    task :generate_destinations, [:use_partial_list] => :environment do |t, args|
+        options = {}
+        opts = OptionParser.new
+        opts.banner = "Usage: rake seed_destinations:generate_destinations [options]"
+        opts.on("-d", "--[no-]dev") { |dev| options[:dev_flag] = dev}
+        args = opts.order!(ARGV) {}
+        opts.parse!(args)
+
         Destination.delete_all
-        CSV.foreach(DEV_LIST_DIRECTORY, headers: true) do |row|
+        if options[:dev_flag]
+            directory = DEV_LIST_DIRECTORY
+        else
+            directory = PROD_LIST_DIRECTORY
+        end
+        CSV.foreach(directory, headers: true) do |row|
             Destination.create!(
                 name: row["Region"],
                 city: row["Major City"],
