@@ -19,7 +19,7 @@ Bay of Biscay,13171604,"Bretagne, Pays de la Loire, Nouvelle-Aquitaine",Bordeaux
 Bayalu Seeme,25907664,"Mysore, Chamarajanagara, Mandya, Hassan, Tumkur, Bangalore Rural, Bangalore, Chikkaballapura, Kolar, Ramanagara, Chikkamagalur",Bangalore,Kannada,IN,,South Asia
 Beijing,26251934,"Beijing, Langfang",Beijing,Mandarin,CN,,China
 Bekasi & the West Java Coast,23153930,"Karawang, Subang, Indramayu, Cirebon, Cirebon City, Majalengka, Kuningan, Bekasi, Bekasi City, Depok City, Bogor, Bogor City",Bekasi,Indonesian,ID,,Southeast Asia
-Belarus & Chernozemie,20132334,"Belarus, Smolensk, Bryansk, Kursk, Belgorod, Voronezh, Tambov, Lipetsk, Oryol, Ryazan",Minsk,Russian,RU,,Eastern Europe
+Belarus & Chernozemie,20132334,"Belarus, Smolensk, Bryansk, Kursk, Belgorod, Voronezh, Tambov, Lipetsk, Oryol, Ryazan",Minsk,Russian,BY,RU,Eastern Europe
 Belgium & Luxembourg,12462531,"Belgium, Luxembourg",Brussels,French,BE,LU,Western Europe
 Benin & Togo,20702496,"Benin, Togo",Lome/Cotonou,French/Fon,BJ,TG,West Africa
 Bohai Bay,24430898,"Qinhuangdao, Tangshan, Tianjin",Tianjin,Mandarin,CN,,China
@@ -48,7 +48,7 @@ Central Germany,10568883,"Hesse, Thuringia, Saxony-Anhalt",Frankfurt am Main,Ger
 Central Henan,21804588,"Zhengzhou, Kaifeng, Xuchang",Zhengzhou,Mandarin,CN,,China
 Central Italy,10373764,"Lazio, Tuscany, Umbria, Vatican City",Rome,Italian,IT,VA,Western Europe
 Central Java Northern Coast,18861670,"Brebes, Tegal, Tegal City, Pemalang, Pekalongan, Pekalongan City, Batang, Kendal, Semarang, Semarang City, Demak, Kudus, Jepara, Pati, Rembang, Blora, Grobogan, Salatiga City",Semarang,Javanese,ID,,Southeast Asia
-Central Luzon,25872273,"Central Luzon, National Capital Region",Manilla,Filipino/Tagalog,PH,,Southeast Asia
+Central Luzon,25872273,"Central Luzon, National Capital Region",Manila,Filipino/Tagalog,PH,,Southeast Asia
 Central Pakistani Punjab,26742354,"Sahiwal, Faisalabad, Sargodha",Faisalabad,Urdu,PK,,South Asia
 Central Rajasthan,18732943,"Alwar, Jaipur, Dausa, Ajmer, Tonk, Sawai Modhopur, Karauli",Jaipur,Rajasthani,IN,,South Asia
 Central Russia,26381857,"Moscow City, Moscow Oblast, Vladimir, Ivanovo, Kaluga, Tula",Moscow,Russian,RU,,Eastern Europe
@@ -127,7 +127,7 @@ Hexi Corridor,10273922,"Jiuquan, Jiayuguan, Zhangye, Jinchang, Wuwei, Lanzhou, B
 Highveld,24174382,"North West, Gauteng, Free State, Lesotho",Johannesburg,English,ZA,LS,South Africa
 Hokkaido & Tohoku,13463362,"Hokkaido, Aomori, Iwaate, Miyagi, Akita, Yamagata, Fukushima",Sapporo,Japanese,JP,,Sea of Japan
 Honduras & El Salvador,16630037,"Honduras, El Salvador",Tagucigalpa/San Salvador,Spanish,HN,SV,Central America
-Hong Kong & Shenzhen & Hong Kong,24621261,"Hong Kong, Shenzhen",Shenzhen/Hong Kong,Cantonese,HK,CN,China
+Hong Kong & Shenzhen,24621261,"Hong Kong, Shenzhen",Shenzhen/Hong Kong,Cantonese,HK,CN,China
 Hoseo & Honam,11449454,"North Chungcheongm Sejong, Dejeonm South Chungcheong, Jeonbuk, South Jeolla, Gwangju, Jeju",Daejeon/Gwangju,Korean,KR,,Sea of Japan
 Houthi Yemen,20744472,"Sa’dah, Hajjah, ‘Amran, Al Hudaydah, Ibb, Dhamar, Al Bayda, Raymah, Sana’a, Amanat Al Asimah, Al Mahwit, Al Jawf",Sana’a,Arabic,YE,,Middle East
 Huai River Basin,26821785,"Fuyang, Huainan, Bengbu, Bozhou, Huaibei, Suzhou",Bengbu,Mandarin,CN,,China
@@ -179,7 +179,7 @@ Lake Tanganyika & Tanzania’s Southern Highlands,12784353,"Ruvuma, Njombe, Mbey
 Lake Victoria in Tanzania,17440254,"Kagera, Geita, Mwanza, Simiyu, Shinyanga, Tabora",Mwanza,Swahili,TZ,,East Africa
 Lakshadweep & North Kerala,21171467,"Ernakulam, Thrissur, Palakkad, Malappuram, Kozhikode, Wayanad, Kannur, Kasargod, Lakshwadeep, Mahe",Kozhikode/Malappuram,Malayalam,IN,,South Asia
 Laos & Northeast Thailand,13410000,"Laos, Loei, Nong Bua Lam Phu, Nong Khai, Udon Thani, Sakon Nakhon, Bueng Kan, Nakhon Phanom, Mukdahan",Vientiane,Lao,LA,TH,Southeast Asia
-Lesser Sundra Islands,16709762,"Bali, West Nusa Tenggara, East Nusa Tenggara, East Timor",Denpasar,Indonesian,ID,TL,Southeast Asia
+Lesser Sundas,16709762,"Bali, West Nusa Tenggara, East Nusa Tenggara, East Timor",Denpasar,Indonesian,ID,TL,Southeast Asia
 Liaodong Peninsula & Qian Mountains,20915943,"Dalian, Yingkou, Dandong, Anshan, Liaoyang, Benxi, Fushun",Dailan,Mandarin,CN,,China
 Liaoning Plains,22830380,"Tieling, Shenyang, Fuxin, Panjin, Jinzhou, Chaoyang, Huludao",Shenyang,Mandarin,CN,,China
 Linyi and Haizhou Bay,26982235,"Huai’an, Suqian, Lianyungang, Linyi",Linyi,Mandarin,CN,,China
@@ -212,7 +212,7 @@ Mongolian Plateau,27506703,"Mongolia, Inner Mongolia",Baotou/Ulaanbaatar,Mongoli
 Moroccan Plateau,22720842,"Fes-Meknes, Rabat-Sale-Kenitra, Casablanca-Settat, Beni Mellal-Khenifra, Marrakech-Safi",Casablanca,Arabic,MA,,North Africa
 Mount Kenya & Lake Turkana,10716817,"Turkana, West Pokot, Samburu, Marsabit, Isiolo, Meru, Laikipia, Nyeri, Kirinyaga, Embu, Tharaka-Nithi, Murang’a, Machakos, Nyandarua",Lodwar/Meru,Swahili,KE,,East Africa
 Mount Tai,29495415,"Tai’an, Jinan, Zibo, Dezhou, Liaocheng",Jinan,Mandarin,CN,,China
-Mymensingh,19530736,"Mymensingh, Tangail, Kishoreganj",Mymensigh,Bengali,BD,,South Asia
+Mymensingh,19530736,"Mymensingh, Tangail, Kishoreganj",Mymensingh,Bengali,BD,,South Asia
 Najd,14695915,"Riyadh, Al-Qassim, Ha’il, ‘Asir, Jazan, Najran",Riyadh,Arabic,SA,,Middle East
 Nanjing,18329453,"Nanjing, Zhenjiang, Ma’anshan, Wuhu",Nanjing,Mandarin,CN,,China
 Nanning & Chinese Gulf of Tonkin,26400080,"Beihei, Qinzhou, Fangchenggang, Chongzuo, Nanning, Baise, Yulin",Nanning,Mandarin,CN,,China
@@ -252,7 +252,7 @@ Northern Spain,15275274,"A Coruna, Alava, Asturias, Cantabria, Gipuzkoa, Huesca,
 Northern Tamil Nadu,25514485,"Tiruvallur, Chennai, Kancheepuram, Ranipet, Vellore, Tirupathur, Tiruvannamalai, Chengalpattu, Viluppuram, Kallakurichi, Cuddalore, Puducherry",Chennai,Tamil,IN,,South Asia
 Northern Thailand & Chao Phraya Basin,15701000,"Mae Hong Son, Chiang Mai, Chiang Rai, Phayao, Nan, Phrae, Lampang, Lamphun, Tak, Sukhothai, Phitsanulok, Uttaradit, Phetchabun, Phitchit, Kamphaeng Phet, Nakhon Sawan, Uthai Thani, Kanchanaburi, Suphan Buri, Ang Thong, Sing Buri, Lopburi, Chai Nat",Chiang Mai,Thai,TH,,Southeast Asia
 Northwest Nigeria,25482972,"Kebbi, Sokoto, Zamfara, Katsina",Sokoto,Hausa/English,NG,,West Africa
-Northwest Vietnam,13290000,"Hoa Binh, Son La, Dien Bien, Lai Chau, Lao Cai, Ha Giang, Cao Bang, Bac Kan, Tuyen Quang, Yen Bai, Phu Tho, Vinh Phuc, Thai Nguyen, Lang Son",Thai Nguyen,Vietnamese,VN,,Southeast Asia
+Northwest Vietnam,13290000,"Hoa Binh, Son La, Dien Bien, Lai Chau, Lao Cai, Ha Giang, Cao Bang, Bac Kan, Tuyen Quang, Yen Bai, Phu Tho, Vinh Phuc, Thai Nguyen, Lang Son",Thái Nguyên,Vietnamese,VN,,Southeast Asia
 Norweigan Sea,11522145,"Norway, Iceland, Denmark, Scotland, Faroe Islands",Glasgow/Oslo,Norweigan/English,NO,GB,Western Europe
 Nyanza,12284029,"Migori, Homa Bay, Kisii, Nyamira, Kericho, Kisumu, Vihiga, Siaya, Nandi, Bomet, Kakamega, Busia",Kisumu,Swahili,KE,,East Africa
 Odisha Highlands & Plateaus,20156397,"Malkangiri, Koraput, Nabarangpur, Kalahandi, Rayagada, Gajapati, Kandhamal, Boudh, Bolangir, Nuapada, Bargarh, Jharsuguda, Sundargarh, Sambalpur, Deogarh, Angul, Dhenkanal, Keonjhar, Subarnapur",Roukela,Odia,IN,,South Asia
