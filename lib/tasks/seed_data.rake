@@ -18,7 +18,13 @@ namespace :seed_flags do
     end
 
     task :seed_database_table => :environment do
-        Flag.delete_all
+        begin
+            Flag.delete_all
+        rescue ActiveRecord::InvalidForeignKey
+            Rails.logger.error 'Replace of flags table violates foreign key constraints.'
+            Rails.logger.error 'Run `rake seed_destinations:seed_dependencies` first.'
+            raise
+        end
         flags_in_memory = []
         CSV.foreach(COUNTRY_CODE_DIRECTORY, headers: true) do |row|
             flags_in_memory << row
