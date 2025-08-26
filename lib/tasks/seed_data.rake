@@ -42,6 +42,12 @@ namespace :seed_flags do
     task :cleanup do
         File.delete(COUNTRY_CODE_DIRECTORY) if File.exist?(COUNTRY_CODE_DIRECTORY)
     end
+
+    task :process => :environment do 
+        Rake::Task["seed_flags:download_file"].execute
+        Rake::Task["seed_flags:seed_database_table"].execute
+        Rake::Task["seed_flags:cleanup"].execute
+    end
 end
 
 
