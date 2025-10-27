@@ -47,6 +47,7 @@ Central & South Chhattisgarh,14249242,"Sarangarh-Bhilaigarh, Mahasamund, Baloda 
 Central & South Telangana,19494622,"Khammam, Mahabubadad, Suryapet, Nalgonda, Nagarkurnool, Wanaparthy, Jogulamba Gadwal, Nurayanpet, Mahbubnagar, Vikarabad, Ranga Reddy, Hyderabad, Medchal-Malkajgiri, Yadadri Bhuvanagiri, Jangaon",Hyderabad,Telegu,,IN,,South Asia
 Central African Atlantic Coast,10337245,"Gabon, Equatorial Guinea, São Tomé and Príncipe, Republic of Congo",Brazzaville,French,Spanish,CG,GA,Central Africa
 Central Anatolia & West Black Sea,17058518,"Ankara, Konya, Karaman, Nigde, Aksaray, Nevsehir, Kirsehir, Kirikkale, Yozgat, Kayseri, Tokat, Samsun, Amasya, Corum, Sinop, Kastamonu, Cankiri, Bartin, Karabuk, Zonguldak, Sivas",Ankara,Turkish,,TR,,Middle East
+Central Anhui,28245854,"Anqing, Lu’an, Hefei, Huainan, Bengbu, Chuzhou",Hefei,Mandarin,,CN,,China
 Central Brazil,18250738,"Mato Grosso do Sul, Goias, Distrito Federal, Mato Grosso, Rondonia",Brasilia,Portuguese,,BR,,South America
 Central Chongqing,18742032,"Shapingba, Jiulongpo, Dadukou, Yuzhong, Nan’an, Jiangbei, Jiangjin, Yongchuan, Rongchang, Dazu, Tongliang, Tongnan, Hechuan, Beibei, Bishan, Yubei, Banan, Qijiang",Chongqing,Sichuanese,,CN,,China
 Central Gujarat,20118434,"Ahmedabad, Kheda, Anand, Vadodara, Chhota Udaipur, Dahod, Panchmahal, Mahisagar",Ahmedabad,Gujarati,,IN,,South Asia
@@ -151,7 +152,6 @@ Issan,18418000,"Bueng Kan, Nakhon Phanom, Mukdahan, Yasothon, Amnat-Charoen, Ubo
 Ivory Coast,29389150,,Abidjan,French,,CI,,West Africa
 Jammu and Kashmir,13603000,,Srinagar,Kashmiri,,IN,,South Asia
 Jianghan Plain,14810536,"Jingzhou, Qianjiang, Xiantao, Tianmen, Xiaogan, Suizhou",Jingzhou,Mandarin,,CN,,China
-Jianghui Anhui,28245854,"Anqing, Lu’an, Hefei, Huainan, Bengbu, Chuzhou",Hefei,Mandarin,,CN,,China
 Jiangnan Anhui,12289468,"Chizhou, Tongling, Wuhu, Ma’anshan, Xuancheng, Huangshan",Wuhu,Mandarin,,CN,,China
 Jiangnan Jiangsu,25488518,"Suzhou, Wuxi, Changzhou",Suzhou,Wu,,CN,,China
 Jilin,23480000,,Changchun,Mandarin,,CN,,China
@@ -206,10 +206,10 @@ Malaysian West Coast,18722700,"Perlis, Kedah, Penang, Perak, Selangor, Kuala Lum
 Mali,22395489,,Bamako,Bambara,,ML,,West Africa
 "Malwa, Madhya Pradesh",23374003,"Alirajpur, Jhabua, Dhar, Barwani, Indore, Dewas, Shajapur, Agar Malwa, Ujjain, Ratlam, Mandsaur, Neemuch, Khandwa, Khargone, Burhanpur, Harda, Betul",Indore,Hindi,Mavli,IN,,South Asia
 "Malwa, Punjab",18791787,"Sri Ganganagar (Rajasthan), Hanumangarh (Rajasthan), Fazilka, Sri Muktsar Sahib, Firozpur, Faridkot, Bathinda, Moga, Ludhiana, Malerkotla, Barnala, Mansa, Sangrur, Patiala, Fatehgarh Sahib",Ludhiana,Punjabi,,IN,,South Asia
+"Maranhao, Piaui, and Tocantins",11810503,"Maranhao, Tocantins, Piaui",São Luis/Teresina,Portuguese,,BR,,South America
 Marathwada,21664913,"Solapur, Osmanabad, Latur, Beed, Nanded, Hingoli, Parbhani, Jalna, Aurangabad",Aurangabad/Solapur,Marathi,,IN,,South Asia
 Marwar,15404742,"Nagaur, Jodhpur, Pali, Jalore, Balotra, Barmer, Jaisalmer, Sirohi, Bikaner, Phalodi",Jodhpur,Hindi,Marwari,IN,,South Asia
 Maseta Central,10168382,"Madrid, Castilla-La Mancha, Extremadura",Madrid,Spanish,,ES,,Western Europe
-MATOPIBA,11810503,"Maranhao, Tocantins, Piaui",São Luis/Teresina,Portuguese,,BR,,South America
 Mediterranean & Atlantic Morocco,23783568,"Tangier-Tetouan-Al Hoceima, Rabat-Sale-Kenitra, Fez-Meknes, L’Oriental, Casablanca-Settat, Ceuta, Melilla",Casablanca,Arabic,,MA,ES,North Africa
 Mediterranean Turkey,11364980,"Isparta, Burdur, Antalya, Mersin, Adana, Hatay, Osmaniye, Kahramanmaras, Northern Cyprus",Antalya,Turkish,,TR,CY,Middle East
 Mekong Delta,20386361,"Ca Mau, An Giang, Can Tho, Vinh Long, Dong Thap",Can Tho,Vietnamese,,VN,,Southeast Asia
