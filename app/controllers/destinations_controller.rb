@@ -18,7 +18,7 @@ class DestinationsController < ApplicationController
   end
 
   def destination_not_found
-    render plain: "404 Destination Not Found", status: 404
+    render :not_found, status: :not_found
   end
 
 end
