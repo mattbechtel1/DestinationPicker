@@ -1,0 +1,43 @@
+// Styles for views not yet migrated to the new component classes above.
+// Each block is deleted as its page gets restyled to use .hero,
+// .destination-grid, .destination-card, etc. instead.
+h1 {
+  color: var(--color-primary);
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.language {
+  text-align: center;
+}
+
+.cities {
+  text-align: center;
+}
+
+.city-header {
+  text-decoration: underline;
+  font-size: large;
+}
+
+.jurisdictions {
+  text-align: center;
+}
+
+.header-row {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.item-row {
+  text-align: center;
+}
+
+.home-page-link {
+  text-align: center;
+  font-size: larger;
+  padding-bottom: 20px;
+}

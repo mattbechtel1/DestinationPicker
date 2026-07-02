@@ -1,0 +1,132 @@
+.btn {
+  display: inline-block;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+  box-shadow: var(--shadow-card);
+}
+
+.btn-primary:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+.btn-secondary {
+  background: #fff;
+  color: var(--color-ink);
+  border: 2px solid var(--color-ink);
+}
+
+.btn-lg {
+  font-size: var(--font-size-lg);
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-md);
+}
+
+.flag-emoji {
+  font-size: var(--font-size-xl);
+}
+
+.flag-emoji--lg {
+  font-size: var(--font-size-2xl);
+}
+
+.flag-emoji--xl {
+  font-size: var(--font-size-3xl);
+}
+
+.region-badge {
+  display: inline-block;
+  padding: var(--space-1) var(--space-3);
+  border-radius: 999px;
+  background: var(--color-surface-muted);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-4);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.destination-card {
+  display: block;
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  color: #fff;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.destination-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.destination-card .region-badge {
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+.destination-card__name a {
+  color: #fff;
+}
+
+.city-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-2) 0 0;
+}
+
+.city-list--chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.city-chip {
+  display: inline-block;
+  padding: var(--space-1) var(--space-2);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff !important;
+  font-size: var(--font-size-sm);
+}
+
+.hero {
+  text-align: center;
+  padding: var(--space-6) var(--space-4);
+  background: var(--gradient-hero);
+  color: #fff;
+}
+
+.eyebrow {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: var(--font-size-sm);
+  opacity: 0.85;
+}
+
+.error-page {
+  text-align: center;
+  padding: var(--space-6) var(--space-4);
+}
