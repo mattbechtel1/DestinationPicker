@@ -8,4 +8,8 @@ module DestinationsHelper
   def wikivoyage_url(city)
     "https://en.wikivoyage.org/wiki/#{city.tr(' ', '_')}"
   end
+
+  def unique_flags(destination)
+    destination.flags.uniq
+  end
 end

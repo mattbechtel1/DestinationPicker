@@ -1,10 +1,13 @@
 <article class="destination-hero page-show-hero <%= region_color_class(@destination.region) %>">
   <span class="region-badge"><%= @destination.region.name %></span>
 
+  <% flags = unique_flags(@destination) %>
   <h1 class="destination-hero__title">
-    <span class="flag-emoji flag-emoji--xl"><%= @destination.flags[0].get_flag_emoji %></span>
+    <span class="flag-emoji flag-emoji--xl"><%= flags[0].get_flag_emoji %></span>
     <%= @destination.name %>
-    <span class="flag-emoji flag-emoji--xl"><%= @destination.flags[1].get_flag_emoji %></span>
+    <% if flags[1] %>
+      <span class="flag-emoji flag-emoji--xl"><%= flags[1].get_flag_emoji %></span>
+    <% end %>
   </h1>
 
   <p class="destination-hero__languages">
