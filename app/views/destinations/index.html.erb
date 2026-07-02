@@ -1,32 +1,8 @@
-<h1>Destinations List</h1>
-
-    <table>
-        <tbody>
-            <thead>
-                <tr class="header-row">
-                    <td>Destination</td>
-                    <td>Cities</td>
-                    <td>Language</td>
-                <tr>
-            </thead>
-        <% @destinations.each do |destination| %>
-            <tr class="item-row">        
-                <td>
-                    <h2>
-                        <%= destination.flags[0].get_flag_emoji %> <%= link_to destination.name, destination_path(destination) %> <%= destination.flags[1].get_flag_emoji %>
-                    </h2>
-                </td>
-                <td>
-                    <% destination.cities.each do |city| %>
-                        <div><a href=<%= 'https://en.wikivoyage.org/wiki/' + city.tr(" ", "_") %>><%= city %></div>
-                    <% end %>
-                </td>
-                <td><%= destination.language_primary.name %>
-                    <% if destination.language_secondary %>
-                        / <%= destination.language_secondary.name %>
-                    <% end %>
-                </td>
-            <tr>
-        <% end %>
-        </tbody>
-    </table>
+<section class="container page-index">
+  <h1>Destinations</h1>
+  <ul class="destination-grid">
+    <% @destinations.each do |destination| %>
+      <li><%= render "destination_card", destination: destination %></li>
+    <% end %>
+  </ul>
+</section>
