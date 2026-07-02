@@ -3,7 +3,7 @@ class DestinationsController < ApplicationController
   rescue_from ActiveRecord::RecordNotFound, with: :destination_not_found
 
   def index
-    @destinations = Destination.order(:name)
+    @destinations = Destination.includes(:region, :flag_primary, :flag_secondary, :language_primary, :language_secondary).order(:name)
   end
 
   def random

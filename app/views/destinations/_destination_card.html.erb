@@ -1,19 +1,21 @@
-<article class="destination-card <%= region_color_class(destination.region) %>">
-  <div class="destination-card__top">
-    <div class="flag-emoji flag-emoji--lg">
-      <% unique_flags(destination).each do |flag| %><%= flag.get_flag_emoji %><% end %>
+<% cache destination do %>
+  <article class="destination-card <%= region_color_class(destination.region) %>">
+    <div class="destination-card__top">
+      <div class="flag-emoji flag-emoji--lg">
+        <% unique_flags(destination).each do |flag| %><%= flag.get_flag_emoji %><% end %>
+      </div>
+      <span class="region-badge"><%= destination.region.name %></span>
+      <h2 class="destination-card__name"><%= link_to destination.name, destination_path(destination) %></h2>
+      <p class="destination-card__languages">
+        <%= destination.languages.map(&:name).join(" / ") %>
+      </p>
     </div>
-    <span class="region-badge"><%= destination.region.name %></span>
-    <h2 class="destination-card__name"><%= link_to destination.name, destination_path(destination) %></h2>
-    <p class="destination-card__languages">
-      <%= destination.languages.map(&:name).join(" / ") %>
-    </p>
-  </div>
-  <div class="destination-card__cities">
-    <ul class="city-list city-list--chips">
-      <% destination.cities.each do |city| %>
-        <li><%= link_to city, wikivoyage_url(city), class: "city-chip", target: "_blank", rel: "noopener" %></li>
-      <% end %>
-    </ul>
-  </div>
-</article>
+    <div class="destination-card__cities">
+      <ul class="city-list city-list--chips">
+        <% destination.cities.each do |city| %>
+          <li><%= link_to city, wikivoyage_url(city), class: "city-chip", target: "_blank", rel: "noopener" %></li>
+        <% end %>
+      </ul>
+    </div>
+  </article>
+<% end %>
