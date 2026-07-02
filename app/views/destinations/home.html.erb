@@ -1,7 +1,14 @@
-<h1>Destination Selector</h1>
-<div class="home-page-link">
-    <%= link_to 'See all locations', destinations_path %>
-</div>
-<div class="home-page-link">
-    <%= link_to 'Get random', select_path %>
-</div>
+<section class="hero page-home-hero">
+  <span class="hero-decor hero-decor--1" aria-hidden="true">🌍</span>
+  <span class="hero-decor hero-decor--2" aria-hidden="true">✈️</span>
+  <span class="hero-decor hero-decor--3" aria-hidden="true">🗺️</span>
+
+  <p class="eyebrow">Your next trip starts here</p>
+  <h1 class="hero-title">Destination Selector</h1>
+  <p class="hero-subtitle">Explore curated regions across the globe, or let fate pick your next adventure.</p>
+
+  <div class="hero-actions">
+    <%= link_to "Browse Destinations", destinations_path, class: "btn btn-primary btn-lg" %>
+    <%= link_to "Surprise Me", select_path, class: "btn btn-secondary btn-lg" %>
+  </div>
+</section>
