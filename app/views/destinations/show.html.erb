@@ -1,34 +1,27 @@
-<h1><div class="region">
-    <%= @destination.region.name %>
-</div></h1>
+<article class="destination-hero page-show-hero <%= region_color_class(@destination.region) %>">
+  <span class="region-badge"><%= @destination.region.name %></span>
 
-<h2>
-    <div class="flag">
-        <%= @destination.flags[0].get_flag_emoji %> <%= @destination.name %> <%= @destination.flags[1].get_flag_emoji %>
-    </div> 
-</h2>
-<h3>
-    <div class="language">
-        <% if @destination.language_secondary %>
-            Languages: <%= @destination.language_primary.name %> & <%= @destination.language_secondary.name %>
-        <% else %>
-            Language: <%= @destination.language_primary.name %>
-        <% end %>
-    </div>
-</h3>
-<h4>
-    <div class="cities">
-        <div class="city-header">Primary Cities</div>
-        <div>
-            <ul class="city-list">
-                <% @destination.cities.each do |city| %>
-                    <li><a href=<%= 'https://en.wikivoyage.org/wiki/' + city.tr(" ", "_") %>><%= city %></a></li>
-                <% end %>
-            </ul>
-        </div>
-    </div>
-</h4>
+  <h1 class="destination-hero__title">
+    <span class="flag-emoji flag-emoji--xl"><%= @destination.flags[0].get_flag_emoji %></span>
+    <%= @destination.name %>
+    <span class="flag-emoji flag-emoji--xl"><%= @destination.flags[1].get_flag_emoji %></span>
+  </h1>
 
-<% if @destination.divisions %>
-    <div class="jurisdictions">Sub-jurisdictions: <%= @destination.divisions %></div>
-<% end %>
+  <p class="destination-hero__languages">
+    <%= @destination.languages.size > 1 ? "Languages" : "Language" %>:
+    <%= @destination.languages.map(&:name).join(" & ") %>
+  </p>
+
+  <section class="cities-section">
+    <h2>Primary Cities</h2>
+    <ul class="city-list city-list--chips">
+      <% @destination.cities.each do |city| %>
+        <li><%= link_to city, wikivoyage_url(city), class: "city-chip", target: "_blank", rel: "noopener" %></li>
+      <% end %>
+    </ul>
+  </section>
+
+  <% if @destination.divisions %>
+    <p class="jurisdictions">Sub-jurisdictions: <%= @destination.divisions %></p>
+  <% end %>
+</article>

@@ -89,6 +89,44 @@
   color: #fff;
 }
 
+.destination-hero {
+  text-align: center;
+  color: #fff;
+  padding: var(--space-6) var(--space-4);
+  border-radius: var(--radius-lg);
+  max-width: 720px;
+  margin: var(--space-5) auto;
+}
+
+.destination-hero .region-badge {
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+.destination-hero__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  color: #fff;
+  font-size: var(--font-size-3xl);
+}
+
+.destination-hero__languages {
+  color: #fff;
+  opacity: 0.9;
+  font-size: var(--font-size-lg);
+}
+
+.cities-section {
+  margin-top: var(--space-5);
+}
+
+.cities-section h2 {
+  color: #fff;
+}
+
 .city-list {
   list-style: none;
   padding: 0;
