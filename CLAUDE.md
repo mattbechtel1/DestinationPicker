@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this app does
 
-DestinationPicker is a Rails 7.2 app that lets users browse and randomly select travel destinations (sub-national regions, not countries). Each destination is a geographic region (e.g., "Bajío", "Canadian West") with associated flags, languages, and major cities. The home page offers two paths: browse all destinations or get a random one.
+DestinationPicker is a Rails 8.1 app that lets users browse and randomly select travel destinations (sub-national regions, not countries). Each destination is a geographic region (e.g., "Bajío", "Canadian West") with associated flags, languages, and major cities. The home page offers two paths: browse all destinations or get a random one.
 
 ## Commands
 
