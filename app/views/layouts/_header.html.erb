@@ -1,0 +1,9 @@
+<header class="site-header">
+  <%= link_to root_path, class: "site-brand" do %>
+    <span aria-hidden="true">🧭</span> DestinationPicker
+  <% end %>
+  <nav class="site-nav">
+    <%= link_to "Browse", destinations_path, class: current_page?(destinations_path) ? "is-active" : nil %>
+    <%= link_to "Surprise Me", select_path %>
+  </nav>
+</header>
