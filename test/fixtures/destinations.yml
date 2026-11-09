@@ -1,23 +1,19 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  name: MyString
-  city: MyString
-  language_1: one
-  language_2: one
-  flag_1: one
-  flag_2: one
-  breakdown: MyText
-  region: one
+# One single-country/single-language destination and one that spans two of each.
+bajio:
+  name: Bajío
+  city: León/Querétaro/Guanajuato
+  language_primary: spanish
+  flag_primary_id: MX
+  region: north_america
   population: 1
+  divisions: Guanajuato, Querétaro
 
-two:
-  name: MyString
-  city: MyString
-  language_1: two
-  language_2: two
-  flag_1: two
-  flag_2: two
-  breakdown: MyText
-  region: two
+pyrenees:
+  name: Pyrenees
+  city: Andorra la Vella/Pau
+  language_primary: french
+  language_secondary: spanish
+  flag_primary_id: FR
+  flag_secondary_id: ES
+  region: europe
   population: 1

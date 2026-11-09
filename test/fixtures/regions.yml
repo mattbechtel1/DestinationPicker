@@ -1,7 +1,5 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+north_america:
+  name: North America
 
-one:
-  name: MyString
-
-two:
-  name: MyString
+europe:
+  name: Europe
